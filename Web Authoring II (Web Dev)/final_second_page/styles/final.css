@@ -1,0 +1,163 @@
+:root{
+    --textColor: #FF6EC6;
+    --borderColor: #F999FF; 
+}
+@font-face {
+    font-family: titles;
+    src: url(Unquiet\ Spirits.ttf);
+}
+
+html{
+    background-image: linear-gradient(45deg, #FF8CFF, white);
+    min-height: 100%;
+}
+
+p, ul{
+    margin: .8em .8em .8em .8em;
+}
+
+li{
+    margin: 0 0 .5em 0;
+}
+
+h2{
+    text-align: center;
+    font-family: titles;
+    color: var(--textColor);
+    letter-spacing: 0.15em;
+}
+
+dl{
+    margin: .8em .8em .8em .8em;
+}
+
+dt{
+    font-weight: bold;
+}
+
+dd{
+    margin: .8em .8em .8em .8em;
+    font-style: italic;
+}
+
+footer{
+    color: purple;
+    font-family: arial, sans-serif;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--borderColor);
+    background-color: #F5D1FE;
+    box-shadow: 4px 2px 3px darkslategray;
+    text-align: center;
+    margin: 2em 30% 2em 30%;
+}
+
+.active{
+    font-family: titles;
+    margin: 0 .5em 0 .5em;
+    padding: .25em .5em .25em .5em;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 4px 2px 3px darkslategray;
+    user-select: none;
+    letter-spacing: 0.15em;
+    background-color: white;
+    border-color: red;
+    color: black;
+}
+
+.button{
+    font-family: titles;
+    margin: 0 .5em 0 .5em;
+    padding: .25em .5em .25em .5em;
+    border-style: solid;
+    color: var(--textColor);
+    border-radius: 20px;
+    box-shadow: 4px 2px 3px darkslategray;
+    background-color: #FFC3E7;
+    border-color: var(--borderColor);
+    user-select: none;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+}
+
+.button:hover{
+    border-color: black;
+    background-color: black;
+    color: white; 
+}
+
+.button:active{
+    background-color: white;
+    border-color: red;
+    color: black;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    text-align: center;
+}
+
+.column{
+    margin: 0 3px 0 3px;
+    color: purple;
+    font-family: arial, sans-serif;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--borderColor);
+    background-color: #F5D1FE;
+    box-shadow: 4px 2px 3px darkslategray;
+}
+
+.photoAlbum{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.photoAlbum li img{
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+}
+
+#headerLinks{
+    text-align: center;
+}
+
+#logo{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content{ 
+    color: purple;
+    font-family: arial, sans-serif;
+    border-style: solid;
+    margin: 0 25% 0 25%;
+    border-radius: 10px;
+    border-color: var(--borderColor);
+    background-color: #F5D1FE;
+    box-shadow: 4px 2px 3px darkslategray;
+}
+
+#main_top{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 1em auto 0 auto;
+    display: block;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px darkslategray;
+    border-color: var(--borderColor);
+}

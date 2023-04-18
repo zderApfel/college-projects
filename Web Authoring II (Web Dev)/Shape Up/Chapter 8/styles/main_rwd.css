@@ -1,0 +1,226 @@
+:root{
+    font-family: Arial, sans-serif;
+}
+
+*{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li{
+    line-height: 140%;
+    font-weight: bold;
+}
+
+blockquote{
+    text-align: center;
+}
+
+header{
+    border-bottom: solid;
+    border-color: lightsteelblue;
+    background-image: linear-gradient(0deg, lightsteelblue, white);
+}
+
+body{
+    width: 95%;
+    max-width: 1024px;
+    border-style: solid;
+    border-color: steelblue;
+    box-shadow: 0px 8px 10px black;
+}
+
+footer{
+    background-color: steelblue;
+    font-size: small;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+
+h3{
+    color: maroon;
+}
+
+.internalLink{
+    color:maroon;
+}
+
+.externalLink{
+    color:steelblue;
+    text-decoration: none;
+}
+
+.externalLink:hover, aside h2{
+    color:maroon;
+}
+
+.internalLink:hover{
+    color:steelblue;
+}
+
+.icon{
+    float: left;
+    padding-right: 5px;
+}
+
+.stressImages{
+    width: 150px;
+    height: 100px;
+    float: right;
+    border-style: solid;
+}
+
+#credit{
+    color: black;
+    text-decoration: underline;
+
+}
+
+#mailLink{
+    color: white;
+    font-weight: bold;
+    
+}
+
+#listHeader{
+    color: maroon;
+}
+
+#navBar{
+    padding-left: 3em;
+    background-color: steelblue;
+}
+
+#navBar ul{
+    list-style: none;
+    position: relative;
+    padding: 0;
+
+}
+
+#navBar ul li {
+    float: left;
+}
+
+
+#navBar ul li a{
+    text-align: center;
+    user-select: none;
+    display: block;
+    width: 10em;
+    padding: 1em 0 1em 0;
+    text-decoration: none;
+    background-color: steelblue;
+}
+
+#navBar ul li a:not(#active){
+    color: white;
+}
+
+#active{
+    color: black;
+}
+
+#navBar ul li a:hover{
+    background-color: lightsteelblue;
+}
+
+#navBar ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+#navBar ul ul li{
+    float: none;
+}
+
+#navBar ul li:hover > ul {
+    display: block;
+}
+
+#navBar > ul::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#additionalResources{
+    padding: 0;
+    text-decoration: none;
+}
+
+#logo{
+    float: left;
+    max-width: 140px;
+    min-width: 70px;
+}
+
+#title{
+	font-size: 250%;
+	font-style: italic;
+	color: steelblue;
+	text-indent: 45px;
+	text-shadow: 3px 3px 3px steelblue;
+}
+
+#subtitle{
+    text-indent: 45px;
+    font-size: 150%;
+}
+
+#main{ 
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#mobileBar{
+    display: none;
+}
+
+
+@media only screen and (max-width: 900px){
+    *{
+        font-size: 90%;
+    }
+    body{
+        box-shadow: none;
+    }
+    #subtitle, #title{
+        text-indent: 0;
+    }
+    #article{
+        padding: 0;
+    }
+    blockquote{
+        margin: 0;
+    }
+    #firstHeader{
+        font-size: 200%;
+    }
+    aside{
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #navBar{
+        display: none;
+    }
+    #mobileBar{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 479px){
+
+    header h2,h3{
+        font-size: 80%;
+    }
+    section p{
+        font-size: 80%;
+    }
+}

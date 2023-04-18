@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>Shape Up!</title>
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/main_rwd.css">
+	<link rel="stylesheet" href="../styles/slicknav.css">
+	<script
+		src="https://code.jquery.com/jquery-3.6.1.js"
+		integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+		crossorigin="anonymous">
+	</script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#navBar').slicknav({prependTo:"#mobileBar"});
+		});
+	</script>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=900px, initial-scale=1"/>
+</head>
+
+<header>
+	<div>
+		<a href="index.html"><img src="../images/shape_up_logo.png" alt="Shape Up Logo" id="logo"></a>
+		<h2 id="title">Shape Up!</h2>
+		<h3 id="subtitle">Find the best fit for you</h3>
+	</div>
+</header>
+<body>
+	<nav id="mobileBar"></nav>
+	<nav id="navBar">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="strength/index.html">Strength Training</a></li>
+			<li><a href="cardio/index.html">Cardio Exercises</a></li>
+			<li><a>Stress Relief</a>
+				<ul>
+					<li><a href="stress/index.html">What is Stress?</a></li>
+					<li><a id="active">5 Helpful Tips</a></li>
+					<li><a href="stress/meditate.html">Meditation</a></li>
+					<li><a href="stress/vipassana.html">Vipassana</a></li>
+				</ul>
+			</li>
+			<li class="last"><a>Healthy Diets</a>
+				<ul>
+					<li><a href="diet/index.html">Why a Healthy Diet?</a></li>
+					<li><a href="diet/meals.html">Plan Your Meals</a></li>
+					<li><a href="diet/calories.html">Count Your Calories</a></li>
+					<li><a href="diet/bmi.html">Calculate Your BMI</a></li>
+				</ul>
+			</li>
+		</ul>
+		
+	</nav>
+	<div id="main">
+		<section id="article">
+			<h3 id="stressHeader">Stress relief tips</h3>
+
+			<p>Here are five tips that can help you relieve stress on a daily basis.</p>
+					
+	
+			<img src="../images/break.jpg" class="stressImages"><h3>Take a break from what you're doing</h3>
+			<p>Maybe it's hard to get away from a big work project, a crying baby or a growing credit card bill. But give yourself permission to step away from it for a short time. Don't avoid your stressors (those bills have to be paid sometime), but take a few minutes for yourself.</p>
+					
+			<img src="../images/exercise.jpg" class="stressImages"><h3>Exercise on a regular basis</h3>
+			<p>Exercise is a huge part of being healthy, and it benefits your mind as well as your body. It doesn't have to be an hour a day; even a 20-minute walk in the midst of a stressful time can give you an immediate effect that can last for several hours.</p>
+	
+			<img src="../images/smile.jpg" class="stressImages"><h3>Take time to smile and laugh</h3>
+			<p>When people are stressed, they often hold a lot of the stress in their face. Laughs and smiles can help relieve some of that tension and improve the situation. And if you share your smile with someone else, it will them release some of their tension too!</p>
+	
+			<img src="../images/support.jpg" class="stressImages"><h3>Get support from family and friends</h3>
+			<p>Call a friend, send an email. Sharing your concerns does help relieve stress. But pick a person who you feel can understand you. If your co-workers are the stressors, it probably won't alleviate your stress if you share your worries over credit card bills with one of them.</p>
+	
+			<img src="../images/meditate.jpg" class="stressImages"><h3>Meditate</h3>
+			<p>Meditation helps the mind and body to relax and focus. When meditating, people can release emotions that may have been causing the body physical stress. Research has shown that even meditating briefly can reap immediate benefits.</p>
+	
+			<h2 id="listHeader">Additional resources</h2>
+			<ul id="additionalResources">
+				<li><a class="externalLink" href="https://www.who.int/philippines/news/feature-stories/detail/20-health-tips-for-2020">Physical activity and health</a></li>
+				<li><a class="externalLink" href="https://www.self.com/gallery/essential-stretches-slideshow">Stretching exercises</a></li>
+				<li><a class="externalLink" href="https://aaptiv.com/magazine/best-strength-training-exercises-beginners">Strength training</a></li>
+				<li><a class="externalLink" href="https://www.verywellfit.com/two-cardio-workouts-for-beginners-1230807">Cardiovascular Training</a></li>
+				<li><a class="externalLink" href="https://www.youtube.com/c/yogawithadriene">Yoga workout</a></li>
+			</ul>
+		</section>
+	</div>
+	<footer>
+		<a id="mailLink" href="mailto:customerService@shapeup.com?subject=Ask the Shape Up! Staff&cc=Courtney.Chambers@sfcollege.edu">Email Us</a>
+		<p>&copy; 2022 Shape Up!</p>
+		<a href="https://www.flaticon.com/free-icons/fast" title="fast icons" id="credit">Fast icons created by Freepik - Flaticon</a>
+	</footer>
+</body>
+</html>

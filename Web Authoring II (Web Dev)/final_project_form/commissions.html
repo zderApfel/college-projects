@@ -1,0 +1,70 @@
+<!--
+Zachary Zahradka
+Spring 2023
+CGS1821.0M1
+Lawrence Pfaff
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+	    <title>Shadowie's Art</title>
+	    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	    <link rel="stylesheet" href="styles/final.css">
+	    <meta charset="utf-8" />
+    </head>
+    <header>
+        <div>
+            <img id="logo" src="images/global/logo.png">
+            <h2 id="headerLinks"><a class="button" href="index.html">Home</a><a class="button" href="portfolio.html">Portfolio</a><a class="active">Commissions</a></h2>
+        </div>
+    </header>
+    <body>
+        <form action="request_filled.html">
+            <fieldset id="firstWindow">
+            
+                <legend>Personal Details - <i>* Denotes a required field</i></legend>
+
+                <p><label for="name">Name: </label>
+                    <input type="text" id="name" placeholder="Anonymous"><br></br></p>
+
+                <p><label for="email">* Email address: </label>
+                <input type="email" id="email" autofocus required><br></br></p>
+                
+                <p><label for="age">* Age:</label>
+                <select id="age" required>
+                    <option value=""></option>
+                    <option value="13-17">13-17</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="46-66">46-55</option>
+                    <option value="56+">56+</option>
+                </select><br></br></p>
+            
+            </fieldset>
+            <fieldset>
+                <legend>Commission Information</legend>
+                What type of commission are you looking for?<br></br>
+                
+                <input type="radio" id="fanart" name="comInfo" value="Fan Art">
+                <label for="fanart">Fan Art</label>
+                <input type="radio" id="oc" name="comInfo" value="Original Character">
+                <label for="oc">Original Character</label>
+                <input type="radio" id="design" name="comInfo" value="Design">
+                <label for="design">Design</label>
+                <input type="radio" id="nsfw" name="comInfo" value="nsfw">
+                <label for="nsfw">NSFW</label><br></br>
+                <p>Describe your commission with as much detail as possible</p>
+                <textarea id="comments" rows="10"></textarea><br></br>
+            </fieldset>
+            <fieldset>
+                <legend>Process your information</legend>
+                <input type="submit" id="submit" value="Submit now">
+                <input type="reset" id="reset" value="Start over">
+            </fieldset>
+        </form>
+    </body>
+    <footer>"Shadowie's Art" designed by <a href="https://github.com/zderApfel">Zachary Zahradka</a> &#169 2022</footer>
+</html>

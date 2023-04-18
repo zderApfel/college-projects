@@ -1,0 +1,103 @@
+:root{
+    --textColor: #FF6EC6;
+    --borderColor: #F999FF; 
+}
+@font-face {
+    font-family: titles;
+    src: url(Unquiet\ Spirits.ttf);
+}
+
+html{
+    background-image: linear-gradient(45deg, #FF8CFF, white);
+}
+
+p, ul{
+    margin: .8em .8em .8em .8em;
+}
+
+li{
+    margin: 0 0 .5em 0;
+}
+
+h2{
+    text-align: center;
+    font-family: titles;
+    color: var(--textColor);
+    letter-spacing: 0.15em;
+}
+
+footer{
+    color: purple;
+    font-family: arial, sans-serif;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: var(--borderColor);
+    background-color: #F5D1FE;
+    box-shadow: 4px 2px 3px darkslategray;
+    text-align: center;
+    margin: 2em 30% 2em 30%;
+}
+
+
+
+.button{
+    font-family: titles;
+    margin: 0 .5em 0 .5em;
+    padding: .25em .5em .25em .5em;
+    border-style: solid;
+    color: var(--textColor);
+    border-radius: 20px;
+    box-shadow: 4px 2px 3px darkslategray;
+    background-color: #FFC3E7;
+    border-color: var(--borderColor);
+    user-select: none;
+    letter-spacing: 0.15em;
+}
+
+.button:hover{
+    border-color: black;
+    background-color: black;
+    color: white; 
+}
+
+.button:active{
+    background-color: white;
+    border-color: red;
+    color: black;
+}
+
+
+
+#headerLinks{
+    text-align: center;
+}
+
+#logo{
+    width: 500px;
+    display: block;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content{ 
+    color: purple;
+    font-family: arial, sans-serif;
+    border-style: solid;
+    margin: 0 25% 0 25%;
+    border-radius: 10px;
+    border-color: var(--borderColor);
+    background-color: #F5D1FE;
+    box-shadow: 4px 2px 3px darkslategray;
+}
+
+#main_top{
+    width: 200px;
+    height: 200px;
+    margin: 1em auto 0 auto;
+    display: block;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px darkslategray;
+    border-color: var(--borderColor);
+}
