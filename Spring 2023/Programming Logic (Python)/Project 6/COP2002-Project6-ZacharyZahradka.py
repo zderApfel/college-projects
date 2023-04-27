@@ -63,9 +63,6 @@ def makeOutput(file): #Will write to output.csv
     print('\nProgram finished.')
 
 
-
-
-
 def main():
     makeOutput('files/output.csv')
 
