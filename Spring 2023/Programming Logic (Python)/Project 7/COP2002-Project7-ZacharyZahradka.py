@@ -5,16 +5,26 @@
     Project 7: Files and Classes
 '''
 class JSONObject:
-    def __init__(self,key,value):
-        self.key = key
+    def __init__(self,keys,value):
+        self.keys = keys
         self.value = value
+        self.item = self.makeItem()
+
+    def makeItem(self):
+        i = 0
+        newObj = {}
+        while i < len(self.keys):
+            newObj[self.keys[i]] = self.value[i]
+            i+=1
+        return newObj
+
 
 class TakeCSV:
     def __init__(self, filepath):
         self.filepath = filepath
         self.keys = []
         self.values = []
-        self.objects = []
+        self.objs = []
 
     def getData(self):
         with open(self.filepath, 'r') as file_object:     
@@ -24,18 +34,15 @@ class TakeCSV:
                 self.values.append(x)
         self.keys = self.values[0]
         self.values.pop(0)
+        
+        for value in self.values:
+            x = JSONObject(self.keys,value).item
+            self.objs.append(x)
+            print(x)
 
-    def makeItems(self):
-        self.getData()
-        i = 0
-        while i < len(self.keys):
-            item = JSONObject(self.keys[i],self.values[i])
-            self.objects.append(item)
-            i+=1
+                
 
     def showObjects(self):
         self.getData()
-        self.makeItems()
-        print(self.objects)
 
 TakeCSV('files/input.csv').showObjects()
